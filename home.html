@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="./images/titlebar.png"> -->
+    <link rel="stylesheet" href="./CSS/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./JAVASCRIPT/home.js"></script>
+     <title>Home page</title>
+
+</head>
+<body>
+
+
+    <!-- ----------------------------------------------------header------------------------------------------------------------ -->
+
+
+    <div class="header">
+    
+        <nav>
+        <img src="images/logo.png" class="logo">
+            <ul class="nav-links">
+                <li><a href="Listing.html" class="active" >Popular places</a></li>
+                <li><a href="house.html">Travel outside</a></li>
+                <li><a href="Listing.html">Online packages</a></li>
+                
+            </ul>
+
+
+            <!-- --------------------------------Login form in Register button STARTS HERE------------------------------------------- -->
+
+
+            <button id="showloginform">Register</button>
+            <div class="login-form" id="loginForm">
+                <form action="" method="post" id="loginFormElement">
+                    <div class="inputBox"><br>
+                        <span>Username</span>
+                        <input type="text" placeholder="enter your username" id="username" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Password</span>
+                        <input type="password" placeholder="enter your password" id="password" required>
+                    </div>
+                  
+                    <div class="remember">
+                        
+                        <input type="checkbox" id="login-remember">
+                        <label for="login-remember">Remember me</label>
+                    </div>
+                    <input type="submit" class="btn" value="login">
+                   </form>
+            </div>
+        </nav>
+       <!-- ------------------------------------LOGIN FORM IN REGISTER BUTTON ENDS HERE---------------------------------- -->
+       
+    
+
+
+        <!-- -------------------------------------SEARCH FORM STARTS HERE---------------------------------------------------------------- -->
+
+
+
+        <div class="container">
+            <h1>Look at your next tour</h1>    
+        <div class="search" id="searchForm" onsubmit="submitForm(event)">
+            <form >
+                <div class="Location-input">
+                    <label >Location</label>
+                    <input type="text" id="location" placeholder="Where are you going?" required>
+                </div>
+                <div>
+                    <label>Check In</label>
+                    <input type="text" id= "checkIn" placeholder="Add Date" required>
+                </div>
+                <div>
+                    <label >Check Out</label>
+                    <input type="text" id="checkOut" placeholder="Return Date" required>
+                </div>
+                <div>
+                    <label >Guest</label>
+                    <input type="text" id="guest" placeholder="Add Guest" required>
+                </div>
+                <button type="submit"><img src="images/search.png" ></button>
+            </form>
+        </div>
+
+    </div>
+</div>
+        <!-- -------------------------------------------------SEARCH FORM ENDS HERE-------------------------------------------------------------------------- -->
+
+
+
+
+    
+ 
+
+    <!-- ------------------------------------------------------EXCECLUSIVES STARTS HERE-------------------------------------------------------------------------------------------- -->
+
+
+
+
+    <div class="container">
+    <h2 class="sub-titles">Execlusives</h2>
+    <div class="execlusives">
+        <div>
+            <img src="images/image-1.png" >
+            <span>
+                <h3>London</h3>
+                <p>Starts @ 799$</p>
+            </span>
+        </div>
+        <div>
+            <img src="images/image-2.png" >
+            <span>
+                <h3>SwitzerLand</h3>
+                <p>Starts @ 1319$</p>
+            </span>
+        </div>
+        <div>
+            <img src="images/image-3.png" >
+            <span>
+                <h3>Australia</h3>
+                <p>Starts @ 999$</p>
+            </span>
+        </div>
+        <div>
+            <img src="images/image-4.png" >
+            <span>
+                <h3>France</h3>
+                <p>Starts @ 647$</p>
+            </span>
+        </div>
+        
+        <div>
+            <img src="images/image-5.png" > 
+            <span>
+                <h3>Amsterdam</h3>
+                <p>Starts @ 598$</p>
+            </span>
+         </div>
+        
+
+         <div>
+            <img src="images/image-6.png" >
+            <span>
+                <h3>NetherLands</h3>
+                <p>Starts @ 963$</p>
+            </span>
+        </div>
+        <div>
+            <img src="images/image-7.png" >
+            <span>
+                <h3>NewYork</h3>
+                <p>Starts @ 1425$</p>
+            </span>
+        </div>
+        <div>
+            <img src="images/image-8.png" >
+            <span>
+                <h3>Chicago</h3>
+                <p>Starts @ 856$</p>
+            </span>
+        </div>
+        <div>
+            <img src="images/image-9.png" >
+            <span>
+                <h3>San-Fransico</h3>
+                <p>Starts @ 852$</p>
+            </span>
+        </div>
+        
+        <div>
+            <img src="images/image-10.png" > 
+            <span>
+                <h3>Shanghai</h3>
+                <p>Starts @ 325$</p>
+            </span>
+         </div>
+        
+    </div>
+
+    <h2 class="sub-titles"> Trending places</h2>
+<div class="trending">
+    <div>
+        <img src="images/dubai.png" >
+        <h3>Dubai</h3>
+    </div>
+    <div>
+        <img src="images/new-delhi.png" >
+        <h3>New delhi</h3>
+    </div>
+    <div>
+        <img src="images/new-york.png" >
+        <h3>New york</h3>
+    </div>
+    <div>
+        <img src="images/paris.png" >
+        <h3>paris</h3>
+    </div>
+</div>
+
+<div class="city">
+    <h3>Sharing <br> Is Earning Now</h3>
+    <p>Great opportunity to make money by <br> sharing your extra space</p>
+    <a href="#" class="city-button">Know More</a>
+</div>
+
+<h2 class="sub-title"> Travellers Stories </h2><br>
+<div class="stories">
+    <div>
+         <img src="images/story-1.png" >
+         <p>Popular European countries with a budget of just $10,000</p>
+    </div>
+
+    <div>
+         <img src="images/story-2.png">
+         <p>Traveled more than 100 Countries in less than a year</p>
+    </div>
+
+    <div>
+         <img src="images/story-3.png">
+         <p>Best experience you get while traveling to Thailand</p>
+    </div>
+</div>
+    <a href="#" class="Start-btn">TRAVEL IS YOUR HAPPINESS</a>
+    
+    <div class="about-msg">
+        <h2>About Staybnb travel</h2>
+        <p>
+            StayBNB is a cutting-edge travel website revolutionizing the way people explore and book accommodations worldwide.
+            With its sleek interface and user-friendly design,
+            StayBNB seamlessly connects travelers with unique stays ranging from cozy apartments in bustling cities to serene retreats nestled in nature.
+            Whether you're seeking a luxurious villa for a romantic getaway or a budget-friendly hostel for a solo adventure,
+            StayBNB offers an extensive range of options to suit every preference and budget. With transparent pricing, detailed listings, 
+            and secure booking processes, StayBNB ensures a hassle-free experience for travelers, empowering them to embark on unforgettable journeys with ease and confidence.
+        </p>
+            
+    </div>
+   
+    <div class="footer">
+         <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i>
+         <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i>
+         <a href="https://linkedin.com/"><i class="fa-brands fa-staylinked"></i>
+         <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+         <a href="https://twitter.com/@X"><i class="fa-brands fa-x-twitter"></i></a>
+         <hr>
+         <p>Copyright @ 2024, Sireen kaakour.</p>
+    </div>
+   </div>
+
+</body>
+</html>

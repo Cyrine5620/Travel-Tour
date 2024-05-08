@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+nav{
+    display: flex ; /* items side by side */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo{
+    width: 140px;
+    cursor:pointer;
+}
+.navBar-white{
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+.navBar-white .nav-links li a{
+    color: black;
+}
+.navBar-white .register-button{
+    background-color: #ff5361;
+    color: #fff;
+}
+nav.navBar-white .fa-bars{
+    color: #000;
+    }
+
+.navBar-white .active::after{
+        background: #ff5361;
+    }
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+#showloginform{
+    background: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-form
+{
+    display: none;
+}
+.header .login-form{
+position: absolute;
+top: 10%; right: 2%;
+background-color:#fff;
+border-radius: 3px;
+box-shadow:#999 ;
+width: 20rem;
+padding-left: 1rem;
+} 
+
+.header .login-form .inputBox {
+margin-bottom: 5px;
+}
+.header .login-form .inputBox span{
+    font-size: 15px;
+    color:#333 ;
+    margin-top: 15px;
+}
+.header .login-form .inputBox input{
+font-size: 16px;
+color:#555 ;
+border-radius: 3px ;
+padding: 3px;
+border-style: none;
+background:#fff;
+width: 80%;
+text-transform: none;
+margin: 8px 0;
+}
+.header .login-form input{
+    margin-bottom: 8px;
+}
+
+
+.header .login-form .remember{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+}
+.header .login-form .remember label{
+cursor: pointer;
+color: #999;
+font-size: 10px;
+}
+.header .login-form .btn{
+    width: 90%;
+    border-style: none;
+    margin: 5px;
+}
+.header .register-button .active{
+    transform: scale(1);
+}
+.btn{
+   margin-top: 4px;
+   display: inline-block;
+   padding: 10px 5px;
+   font-size: 10px;
+   color: #fff;
+   background-color: #ff5361;
+   border-radius: 3px; 
+   cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: 2px;
+}
+
+.container{
+    padding: 0 7%;
+}
+
+    .book{
+        background-color:#ff5361;
+        width: 100px;
+        height: 50px;
+        color: white;
+        border-radius: 5px;
+        border-style: none;
+    }
+.list-container{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+.left-col{
+        flex-basis: 70%;
+        }
+.register-button{
+    background: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+.left-col h1{
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+.house{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px 0;
+        border-top: 1px solid #ccc ;
+        }
+        
+.house-img{
+    flex-basis: 40%;
+}
+.house-info{
+    flex-basis: 58%;
+    color: #ccc;
+}
+.house-img img{
+    width: 100%;
+    border-radius:12px ;
+}
+.house-info h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+.house-info i{
+    color: #ff5361;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+.house-price{
+    text-align: right;
+}
+.house-price h3{
+    font-size: 20px;
+  
+}
+.house-price h3 span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.right-col{
+    flex-basis: 25%;
+    
+    }
+.side-bar{
+    border:1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.side-bar h2{
+    font-weight: 500;
+}
+.side-bar h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+.filter p{
+    flex: 1;
+}
+.filter input{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+}
+.sidebar-link a {
+    text-decoration: none;
+    color: #333;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.pagination img{
+    width: 15px;
+    margin: 10px 20px;
+}
+.right-arrow{
+    transform: rotate(180deg);
+}
+.pagination span{
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.current{
+    background: #333;
+    color: #fff;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form Styling */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #ff5361;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+.footer p{
+    padding-bottom: 15px;
+}
+.active{
+    position: relative;
+}
+.active::after{
+content: '';
+background: #fff;
+width: 25px;
+height: 2px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: -12px;
+border-radius: 2px;
+}
+
+#openModalBtn{
+    display: none;
+}
